@@ -7,6 +7,11 @@ class CrabShare < Formula
 
   head "https://github.com/lounge-rocks/crab_share.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/crab_share-0.2.2"
+    sha256 cellar: :any_skip_relocation, ventura: "e20eb0bb5ca3eb1dfaef9a60459fa6114d953fe8f9cbd0da389ce313bd1ea887"
+  end
+
   depends_on "rust" => :build
   depends_on :macos
 
