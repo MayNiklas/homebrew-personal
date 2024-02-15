@@ -16,7 +16,7 @@ class BonnMensa < Formula
 
   bottle do
     root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/bonn-mensa-0.0.4"
-    sha256 cellar: :any_skip_relocation, ventura: "b6361998d9bf10c399c812a320a39723390cedf9bed10da4afb140359eae5e25"
+    sha256 cellar: :any_skip_relocation, ventura: "bf5b8c2a5c7284629ed7baa74a01269f7c6f3d10a78573b14aa304e79c1228ab"
   end
 
   depends_on :macos
