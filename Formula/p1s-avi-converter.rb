@@ -18,6 +18,7 @@ class P1sAviConverter < Formula
     sha256 cellar: :any_skip_relocation, ventura: "375e5f732b14c0563b7f15a8bb4f5c22bdb270f8f458cfc86a815e5f3614e1cc"
   end
 
+  depends_on "ffmpeg"
   depends_on :macos
   depends_on "python"
 
