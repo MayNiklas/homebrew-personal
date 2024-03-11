@@ -13,6 +13,11 @@ class P1sAviConverter < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/p1s-avi-converter-1.0.0"
+    sha256 cellar: :any_skip_relocation, ventura: "375e5f732b14c0563b7f15a8bb4f5c22bdb270f8f458cfc86a815e5f3614e1cc"
+  end
+
   depends_on :macos
   depends_on "python"
 
