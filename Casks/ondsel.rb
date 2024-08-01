@@ -1,12 +1,12 @@
 cask "ondsel" do
   arch arm: "apple-silicon-arm64", intel: "intel-x86_64"
 
-  version "2024.2.1"
-  sha256 arm:   "5911ae8133597af8af71e0163090984b62bd75eea16b0960cea002d52685eb97",
-         intel: "8448b068997ed782a9fb130fa2fb2c0a2a122f8f71489e8e4f35269e1c5e3790"
+  version "2024.2.2"
+  sha256 arm:   "666358b259ebc5bcb2f9f5eba0c2607bad236b7f716bb5d0dd2fba3a1be78092",
+         intel: "447f023fedd79fe167d663863cee5e0f455adffa8a952f4d14f343fe354772b2"
 
   # TODO: find a solution to replace the hardcoded build number in the url
-  url "https://github.com/Ondsel-Development/FreeCAD/releases/download/#{version}/Ondsel_ES_#{version}.37226-macOS-#{arch}.dmg",
+  url "https://github.com/Ondsel-Development/FreeCAD/releases/download/#{version}/Ondsel_ES_#{version}.37240-macOS-#{arch}.dmg",
       verified: "github.com/Ondsel-Development/FreeCAD/"
   name "ondsel"
   desc "FreeCAD fork with a modernized UI"
