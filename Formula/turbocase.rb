@@ -9,6 +9,12 @@ class Turbocase < Formula
 
   head "https://codeberg.org/MartijnBraam/TurboCase.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/turbocase-1.8.0"
+    sha256 cellar: :any_skip_relocation, arm64_sonoma: "70304d8aff1b3fb5195a46ef9283cc1f2f66c19161d5eef692f1a9762cda33db"
+    sha256 cellar: :any_skip_relocation, ventura:      "bc4e7ad6927b469535e1021e2143ff7f9a40aa744a3e7372969529b7fe9d0ac3"
+  end
+
   depends_on :macos
   depends_on "python"
 
