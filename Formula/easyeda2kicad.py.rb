@@ -9,11 +9,6 @@ class Easyeda2kicadPy < Formula
 
   head "https://github.com/uPesy/easyeda2kicad.py.git", branch: "master"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   depends_on "rust" => :build
   depends_on :macos
   depends_on "python@3.13"

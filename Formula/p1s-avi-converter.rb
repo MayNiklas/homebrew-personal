@@ -8,11 +8,6 @@ class P1sAviConverter < Formula
 
   head "https://github.com/MayNiklas/p1s-avi-converter.git", branch: "main"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   bottle do
     root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/p1s-avi-converter-1.0.0"
     rebuild 1

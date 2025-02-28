@@ -9,11 +9,6 @@ class BonnMensa < Formula
 
   head "https://github.com/alexanderwallau/bonn-mensa.git", branch: "main"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   bottle do
     root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/bonn-mensa-1.0.0"
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "b3f8242afa56c79ea2778dd98bdc12d3cbff4c75ee1a581b96f292698e85620c"
