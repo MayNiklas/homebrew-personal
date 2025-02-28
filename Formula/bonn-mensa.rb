@@ -17,7 +17,7 @@ class BonnMensa < Formula
   end
 
   depends_on :macos
-  depends_on "python"
+  depends_on "python@3.13"
 
   uses_from_macos "libxml2"
   uses_from_macos "libxslt"
