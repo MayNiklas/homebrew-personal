@@ -11,14 +11,6 @@ cask "wealthfolio" do
   desc "Beautiful Private and Secure Desktop Investment Tracking Application"
   homepage "https://wealthfolio.app/"
 
-  # Upstream uses GitHub releases to indicate that a version is released
-  # (there's also sometimes a notable gap between the release being created
-  # and the homepage being updated), so the `GithubLatest` strategy is necessary.
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   depends_on macos: ">= :high_sierra"
 
   app "Wealthfolio.app"
