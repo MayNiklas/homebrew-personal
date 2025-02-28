@@ -10,8 +10,9 @@ class P1sAviConverter < Formula
 
   bottle do
     root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/p1s-avi-converter-1.0.0"
-    rebuild 1
-    sha256 cellar: :any_skip_relocation, ventura: "9671a6b4c794dce863a7d0338828e1fb281a405202d6bfb5b476f0ce5de34b60"
+    rebuild 2
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "25f80f02af45a33e93b3703cb2a8dc5a3c799efb3b4e100517caf000d8770ac5"
+    sha256 cellar: :any_skip_relocation, ventura:       "52cac42a93297d3baca2204117416bb4bbd90ff0709b16ed64d622847e4fa008"
   end
 
   depends_on "ffmpeg"
