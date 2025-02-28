@@ -9,6 +9,12 @@ class Easyeda2kicadPy < Formula
 
   head "https://github.com/uPesy/easyeda2kicad.py.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/easyeda2kicad.py-0.6.5"
+    sha256 cellar: :any, arm64_sequoia: "6fc9937049a4e268ce054f0f1d7645621bb02e412e7a3345f6a0d6fcdd195980"
+    sha256 cellar: :any, ventura:       "4497b253b67a4dc3808a80070b513344551df5afd91f4056b3198a9a7311e9cb"
+  end
+
   depends_on "rust" => :build
   depends_on :macos
   depends_on "python@3.13"
