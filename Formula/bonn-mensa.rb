@@ -10,9 +10,9 @@ class BonnMensa < Formula
   head "https://github.com/alexanderwallau/bonn-mensa.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/bonn-mensa-1.1"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "cd2780cd3aaed56234955709f0c98cbf110a1fccea0ef10c1580186714716dd3"
-    sha256 cellar: :any_skip_relocation, ventura:       "91868e058d9945431d4172353a501cca89b7f81dfa8c2c88d9fcdedf46892cc3"
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/bonn-mensa-1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "dd011dc2d8c5efc84399f318201cd4556c041abd0903228cf7f781db3beb29dd"
+    sha256 cellar: :any_skip_relocation, ventura:       "3e9668a45b27fd4ad2f9ed41a85155d317e6066625e92716bb3fbc14642e47aa"
   end
 
   depends_on :macos
