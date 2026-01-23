@@ -16,7 +16,6 @@ class Meshtastic < Formula
 
   depends_on "libyaml"
   depends_on :macos
-  depends_on macos: :sonoma
   depends_on "python@3.13"
 
   resource "bleak" do
