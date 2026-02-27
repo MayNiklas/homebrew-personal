@@ -8,8 +8,8 @@ class CrabShare < Formula
   head "https://github.com/lounge-rocks/crab_share.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/crab_share-0.2.3"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe: "ad4606e957915914716f372664ed4f02d0b9e7f63b5aed49b7f3453afb87cb29"
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/crab_share-0.3.0"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe: "a19e8194a439d371a1990e1d23490d03674bdef5985d50cd029d5227d95a60bf"
   end
 
   depends_on "rust" => :build
