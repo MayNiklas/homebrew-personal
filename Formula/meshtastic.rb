@@ -3,8 +3,8 @@ class Meshtastic < Formula
 
   desc "Python CLI and API for talking to Meshtastic devices"
   homepage "https://meshtastic.org"
-  url "https://github.com/meshtastic/python/archive/refs/tags/2.7.6.tar.gz"
-  sha256 "19b97d46f3853a7166a9015f7e4c96d1f0dccd50fdebf4f3b8e6b1ce14dabf4d"
+  url "https://github.com/meshtastic/python/archive/refs/tags/2.7.8.tar.gz"
+  sha256 "efa1f4c2f1140900437ab5f076613804ce964664b76e49faab868301c8f240b9"
   license "GPL-3.0-only"
 
   head "https://github.com/meshtastic/python.git", branch: "master"
