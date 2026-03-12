@@ -10,8 +10,8 @@ class Meshtastic < Formula
   head "https://github.com/meshtastic/python.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/meshtastic-2.7.6"
-    sha256 cellar: :any, arm64_tahoe: "a94d4c12b852c3901e83ee824e2f8c2ee97172a65cba7ef735626cd9a7a291d2"
+    root_url "https://github.com/MayNiklas/homebrew-personal/releases/download/meshtastic-2.7.8"
+    sha256 cellar: :any, arm64_tahoe: "f4ca9288bf18fc5b1f78668f0c62fbf1d39d2473a42c19de8db6459f491fa9fc"
   end
 
   depends_on "libyaml"
