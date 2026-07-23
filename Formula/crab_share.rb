@@ -29,5 +29,15 @@ class CrabShare < Formula
     # check if help text is printed
     output = shell_output("#{bin}/crab_share --help")
     assert_match "Usage:", output
+
+    # upload a test file - expect an error because no credentials are provided
+    (testpath/"test.txt").write("Hello World!")
+    output = shell_output("#{bin}/crab_share test.txt 2>&1", 1)
+    assert_match "Could not read ~/.aws/crab_share.json", output
+    assert_match "No such file or directory (os error 2)", output
+
+    # upload a test file that does not exist - expect an error
+    output = shell_output("#{bin}/crab_share file-does-not-exist.txt 2>&1", 1)
+    assert_match "Path file-does-not-exist.txt does not exist", output
   end
 end
