@@ -9,7 +9,7 @@ cask "kicad@9" do
   homepage "https://kicad.org/"
 
   conflicts_with cask: "kicad"
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   suite "KiCad"
   binary "#{appdir}/KiCad/KiCad.app/Contents/MacOS/dxf2idf"

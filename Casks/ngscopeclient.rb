@@ -11,7 +11,7 @@ cask "ngscopeclient" do
   desc "Advanced T&M remote control and analysis suite"
   homepage "https://www.ngscopeclient.org/"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "ngscopeclient.app"
 
